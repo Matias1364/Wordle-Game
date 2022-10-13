@@ -1,0 +1,45 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.square{
+    width: 80px;
+    height: 80px;
+    outline: none;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    border: none;
+    background-color: aqua;
+}
+.result{
+    text-align: center;
+    font-size: 36px;
+}
+.button{
+    width: 170px;
+    height: 60px;
+    border-radius: 16px;
+    border: none;
+    background-color: rgb(143, 77, 230);
+    font-size: 32px;
+    color: white;
+}
+.button:hover{
+    border: solid 3px red;
+    background-color: white;
+    color: rebeccapurple;
+}
