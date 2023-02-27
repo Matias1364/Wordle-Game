@@ -56,7 +56,7 @@ fetch(URL,options)
             }
             let existIndexArr = existWords(wordArr, finalInput);
             existIndexArr.forEach((e) => {
-              squares[e].style.backgroundColor = "gold";
+              squares[e].style.backgroundColor = "#ad0000";
             });
             cont++;
             if (cont <= 5) {

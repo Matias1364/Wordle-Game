@@ -1,9 +1,11 @@
+
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    background-color: black;
+    color: white;
 }
 .header-container{
     display: flex;
@@ -34,7 +36,8 @@ h1{
     color: white;
     text-align: center;
     border: none;
-    background-color: aqua;
+    background-color: rgb(209, 91, 44);
+    border-radius: 5px;
 }
 .result{
     text-align: center;
@@ -45,7 +48,7 @@ h1{
     height: 60px;
     border-radius: 16px;
     border: none;
-    background-color: rgb(143, 77, 230);
+    background-color: rgb(192, 162, 229);
     font-size: 32px;
     color: white;
 }
