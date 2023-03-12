@@ -3,21 +3,22 @@ let mainC = document.querySelector(".main-container");
 let rowId = 1;
 let cont = 1;
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'b4444ff329mshc073181333238cep115507jsn36b44ba70186',
-		'X-RapidAPI-Host': '1000-most-common-words.p.rapidapi.com'
-	}
-};
-const URL='https://1000-most-common-words.p.rapidapi.com/words/spanish?words_limit=1';
-fetch(URL,options)
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': 'b4444ff329mshc073181333238cep115507jsn36b44ba70186',
+// 		'X-RapidAPI-Host': '1000-most-common-words.p.rapidapi.com'
+// 	}
+// };
+const URL='https://api.generadordni.es/v2/text/words?words=1&language=es';
+fetch(URL)
 .then(res=>res.json())
 .finally(()=>{
   let loading=document.querySelector('.loading')
   loading.style.display='none'
 })
 .then(data =>{
+  console.log(data)
   let word = data[0];
 
   let wordArr = word.toUpperCase().split("");
